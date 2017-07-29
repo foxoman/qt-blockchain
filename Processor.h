@@ -4,13 +4,18 @@
 #include <QByteArray>
 #include <QDateTime>
 
+#include "Blockchain.h"
+
 class Processor
 {
 public:
     explicit Processor();
-    void generateNextBlock();
 
 private:
     QByteArray calculateHash(const int index, const QByteArray prevHash, const QByteArray data, const QDateTime timestamp);
-    bool validateBlockData(const int index, const QByteArray prevHash, const QByteArray data, const QDateTime timestamp);
+    bool validateNextBlock(const int index, const QByteArray prevHash, const QByteArray nextHash, const QDateTime timestamp);
+    void generateNextBlock();
+
+private:
+    Blockchain m_blockchain;
 };

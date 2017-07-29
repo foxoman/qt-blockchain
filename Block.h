@@ -15,4 +15,11 @@ private:
     QByteArray m_currHash;
     QByteArray m_data;
     QDateTime m_timestamp;
+
+public:
+    int getIndex() const;
+    QByteArray getPrevHash() const;
+    QByteArray getCurrHash() const;
+    QByteArray getData() const;
+    QDateTime getTimestamp() const;
 };
