@@ -11,7 +11,8 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     Block.cpp \
-    Processor.cpp
+    Processor.cpp \
+    Chain.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -26,4 +27,5 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 HEADERS += \
     Block.h \
-    Processor.h
+    Processor.h \
+    Chain.h
