@@ -14,6 +14,7 @@ private:
     QVector<Block> m_chain;
 
 public:
+    int size() const;
     int getLastBlockIndex() const;
     QByteArray getLastBlockHash() const;
     QDateTime getLastBlockTimestamp() const;

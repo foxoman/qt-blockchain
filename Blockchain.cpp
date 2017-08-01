@@ -19,3 +19,8 @@ QDateTime Blockchain::getLastBlockTimestamp() const
 {
     return m_chain.last().getTimestamp();
 }
+
+int Blockchain::size() const
+{
+    return m_chain.size();
+}
