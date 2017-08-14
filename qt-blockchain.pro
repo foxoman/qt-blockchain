@@ -12,7 +12,10 @@ TEMPLATE = app
 SOURCES += main.cpp \
     Block.cpp \
     Processor.cpp \
-    Blockchain.cpp
+    Blockchain.cpp \
+    Transaction.cpp \
+    TxInput.cpp \
+    TxOutput.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -28,4 +31,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 HEADERS += \
     Block.h \
     Processor.h \
-    Blockchain.h
+    Blockchain.h \
+    Transaction.h \
+    TxInput.h \
+    TxOutput.h
